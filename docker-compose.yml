@@ -3,6 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "7200:5000"
+      - 7200:5000
+      - 7300:5100
     volumes:
       - .:/app
