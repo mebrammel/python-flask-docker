@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 import yfinance as yf
+import time
 
 app = Flask(__name__)
 
@@ -15,4 +16,5 @@ def get_spy_price():
     })
 
 if __name__ == '__main__':
+    print(f"Run app, start time: {time.ctime(time.time())}")
     app.run(host='0.0.0.0', port=5000)
