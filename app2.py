@@ -18,3 +18,4 @@ def get_spy_price():
 if __name__ == '__main__':
     print(f"Run app, start time: {time.ctime(time.time())}")
     app.run(host='0.0.0.0', port=5100)
+    print(f"finished {time.ctime(time.time())}")
